@@ -1,0 +1,44 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float}
+\usepackage{titlesec}
+\usepackage[dvips]{graphicx}
+\graphicspath{{imgs/}}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+
+\addto\captionsrussian{\renewcommand\refname{\normalfont СПИСОК ЛИТЕРАТУРЫ}}
+\makeatletter
+\renewcommand\@biblabel[1]{\hfill#1.\hfill}
+\makeatother
+\bibliographystyle{gost705mod}
+
+\def\v{{\bf v}}
+\def\V{{\bf V}}
+\def\d{\partial}
+\def\Re{\hbox{Re}}
+\def\c{{\bf c}}
+\def\om{{\ensuremath{\mbox{\boldmath$\omega$}}}}
+\def\Om{{\ensuremath{\mbox{\boldmath$\Omega$}}}}
+\def\rot{\operatorname{rot}}
+\def\No{\textnumero}
+
+
+\begin{document}
+
+\begin{center}
+{\Large Механизм поддержания пульсаций в турбулнетных течениях в труах и каналах}
+\\[10pt]
+{\it Н.В.\,Никитин, В.О.\,Пиманов,}
+\\
+{\it НИИ механики МГУ, Москва}
+\end{center}
+
+\input{introduction}
+\input{math_and_method}
+
+\newpage
+\bibliography{biblio} 
+
+\end{document}
